@@ -1,3 +1,3 @@
-#Takeaway#
+#Takeaway
 
 Simple test
