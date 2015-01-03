@@ -39,14 +39,14 @@ Make sure that your Takeaway is thoroughly tested and that you use mocks and/or 
 ##CRC
 
 ###Menu
-|Responsibility		|Collaborators		|
-|-------------------|-------------------|
-|Be printed			|Order				|
+Responsibility | Collaborators
+--- | ---
+Be printed | Order
 
 ###Order
-|Responsibility		|Collaborators		|
-|-------------------|-------------------|
-|View Menu			|Menu				|
-|Add Dish(es)		|					|
-|Delete Dish(es)	|					|
-|Checkout			|					|
+Responsibility | Collaborators
+--- | ---
+View Menu | Menu
+Add Dish(es) | 
+Delete Dish(es) | 
+Checkout | 
