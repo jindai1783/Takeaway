@@ -1,6 +1,6 @@
 #Takeaway
 
-##Problem Description
+##Problem Statement
 
 Write a Takeaway program.
 
