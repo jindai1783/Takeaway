@@ -35,3 +35,5 @@ Make sure that your Takeaway is thoroughly tested and that you use mocks and/or 
 1. Repeat user scenario 2 from step 1 to step 6.
 2. The customer enters the total amount to transfer, and got it wrong, "Ooops, you've transferred the wrong amount, please try it again." says the text.
 3. The customer is upset, and decides to pick another restaurant.
+
+##CRC
