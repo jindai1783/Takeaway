@@ -41,9 +41,12 @@ Make sure that your Takeaway is thoroughly tested and that you use mocks and/or 
 ###Menu
 |Responsibility		|Collaborators		|
 |-------------------|-------------------|
-|			helllo				|				world	|
+|Be printed			|Order				|
 
 ###Order
 |Responsibility		|Collaborators		|
 |-------------------|-------------------|
-|					|					|
+|View Menu			|Menu				|
+|Add Dish(es)		|					|
+|Delete Dish(es)	|					|
+|Checkout			|					|
