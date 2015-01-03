@@ -41,7 +41,7 @@ Make sure that your Takeaway is thoroughly tested and that you use mocks and/or 
 ###Menu
 |Responsibility		|Collaborators		|
 |-------------------|-------------------|
-|					|					|
+|			helllo				|				world	|
 
 ###Order
 |Responsibility		|Collaborators		|
