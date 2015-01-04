@@ -1,5 +1,13 @@
 #Takeaway
 
+##Try It
+To run from pry
+```ruby
+require './lib/order.rb'
+order = Order.new
+order.go
+```
+
 ##Problem Statement
 
 Write a Takeaway program.
