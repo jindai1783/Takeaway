@@ -1,8 +1,8 @@
 class Menu
 
   attr_reader :dishes
-  def initialize
-    @dishes = {}
+  def initialize(options = {})
+    @dishes = options.fetch(:dishes, {})
   end
 
   def add index, name, price
@@ -14,11 +14,11 @@ class Menu
   end
 
   def print
-    width = 18
+    w = 18
     @dishes.map do |i, v|
       beginning = "#{i}. #{v[0]}"
       ending = "#{format("%.2f", v[1]/100)}"
-      puts beginning + ending.rjust(width)
+      puts beginning.ljust(w) + ending.rjust(w)
     end
   end
 

@@ -17,7 +17,7 @@ describe Menu do
 
   it 'should print the menu' do
     menu.add(1, 'Peking Duck', 800)
-    line = "1. Peking Duck              8.00\n"
+    line = "1. Peking Duck                  8.00\n"
     expect{menu.print}.to output(line).to_stdout
   end
 
