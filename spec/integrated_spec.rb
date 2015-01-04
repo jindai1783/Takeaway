@@ -3,14 +3,8 @@ require 'menu.rb'
 
 describe 'Integrated' do 
 
-  dishes = {
-    1 => ['Mushroom', 300],
-    2 => ['Potato', 200],
-    3 => ['Sushi', 500]
-  }
-
-  let(:menu) {Menu.new(:dishes => dishes)}
-  let(:order) {Order.new menu}
+  let(:menu) {Menu.new}
+  let(:order) {Order.new}
 
   it 'should print menu within order' do
     order.view_menu

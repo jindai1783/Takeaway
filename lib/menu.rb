@@ -2,7 +2,7 @@ class Menu
 
   attr_reader :dishes
   def initialize(options = {})
-    @dishes = options.fetch(:dishes, {})
+    @dishes = options.fetch('dishes') {self.default}
   end
 
   def add index, name, price
@@ -20,6 +20,15 @@ class Menu
       ending = "#{format("%.2f", v[1]/100)}"
       puts beginning.ljust(w) + ending.rjust(w)
     end
+    puts '===================================='
+  end
+
+  def default
+    {
+      1 => ['Mushroom', 300],
+      2 => ['Potato', 200],
+      3 => ['Sushi', 500]
+    }
   end
 
 end

@@ -3,7 +3,7 @@ require 'order.rb'
 describe Order do 
 
   let(:menu) {double :menu}
-  let(:order) {Order.new(menu)}
+  let(:order) {Order.new('menu' => menu)}
 
   it 'should ask for action' do
     expect{order.ask}.to output().to_stdout
