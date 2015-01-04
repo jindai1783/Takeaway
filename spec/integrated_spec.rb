@@ -17,9 +17,9 @@ describe 'Integrated' do
     expect{order.view_menu}.to output().to_stdout
   end
 
-  it 'should tell which dish you added when ordering' do
+  it 'shall proceed checkout if sum entered correctly' do
     order.add({'number' => 1, 'quantity' => 1})
-    expect{}
+    expect(order.checkout('sum' => 300)).to eq true
   end
 
 end

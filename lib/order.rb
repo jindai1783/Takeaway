@@ -33,4 +33,16 @@ class Order
     @basket.delete(n)
   end
 
+  def checkout(options = {})
+    puts 'Please enter the total sum'
+    s = options.fetch('sum') {gets}
+    sum = @basket.inject(0) do |sum, (n, q)|
+      sum + @menu.dishes[n][1] * q
+    end
+    if s == sum
+      true
+    else
+      puts 'Wrong sum, please checkout again'
+    end
+  end
 end
