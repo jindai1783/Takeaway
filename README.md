@@ -55,6 +55,12 @@ Be printed | Order
 Responsibility | Collaborators
 --- | ---
 View Menu | Menu
-Add Dish(es) | 
-Delete Dish(es) | 
+Add dish(es) | 
+Delete dish(es) | 
 Checkout | 
+Make a real order | Text
+
+###Text
+Responsibility | Collaborators
+--- | ---
+Send text | 
