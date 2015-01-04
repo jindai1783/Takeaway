@@ -1,7 +1,7 @@
 #Takeaway
 
 ##Try It
-To run from pry
+To run from pry, first install _twilio-ruby_ using gem.
 ```ruby
 require './lib/order.rb'
 order = Order.new
