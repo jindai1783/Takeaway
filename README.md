@@ -1,14 +1,23 @@
-#Takeaway
+# Takeaway
 
-##Try It
-To run from pry, first install _twilio-ruby_ using gem.
+## Introduction
+
+This repository is an exercise to practice OOD in ruby, and integrating external API, i.e. Twilio.
+
+## Try It
+
+```
+gem install twilio-ruby
+pry
+```
+
 ```ruby
 require './lib/order.rb'
 order = Order.new
 order.go
 ```
 
-##Problem Statement
+## Problem Statement
 
 Write a Takeaway program.
 
@@ -23,7 +32,7 @@ The text sending functionality should be implemented using _Twilio API_. Use twi
 
 Make sure that your Takeaway is thoroughly tested and that you use mocks and/or stubs, as necessary to not to send texts when your tests are run. However, if your Takeaway is loaded into IRB and the order is placed, the text should __actually be sent__. Use Twilio with your "verified number" to send messages.
 
-##User Scenario
+## User Scenario
 
 ###1
 1. A customer connects to the server via phone.
@@ -44,14 +53,14 @@ Make sure that your Takeaway is thoroughly tested and that you use mocks and/or 
 2. The customer enters the total amount to transfer, and got it wrong, "Ooops, you've transferred the wrong amount, please try it again." says the text.
 3. The customer is upset, and decides to pick another restaurant.
 
-##CRC
+## CRC
 
-###Menu
+### Menu
 Responsibility | Collaborators
 --- | ---
 Be printed | Order
 
-###Order
+### Order
 Responsibility | Collaborators
 --- | ---
 View Menu | Menu
@@ -60,7 +69,7 @@ Delete dish(es) |
 Checkout | 
 Make a real order | Text
 
-###Text
+### Text
 Responsibility | Collaborators
 --- | ---
 Send text | 
